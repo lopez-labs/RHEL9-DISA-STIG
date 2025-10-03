@@ -103,12 +103,14 @@ Harden a RHEL9 virtual machine according to DISA STIG requirements, leveraging R
 
 ## Reflection
 
-After I completed these manual remediations I reran the SCAP scan to verify the success of the fixes. The <a href="https://github.com/lopez-labs/RHEL9-DISA-STIG/blob/main/LabScreenshots/%20SCAPScanScoreAfterManualRemediation.png">SCAP scan score after remediation</a> was 36.36%, an increase of only 1.3%. Although this is a small increase overall, CAT 1 open finding vulnerabilities were reduced by 70% as is seen by this <a href="">before</a> and <a href="">after</a>.
+After I completed these manual remediations I reran the SCAP scan to verify the success of the fixes. The <a href="https://github.com/lopez-labs/RHEL9-DISA-STIG/blob/main/LabScreenshots/%20SCAPScanScoreAfterManualRemediation.png">SCAP scan score after remediation</a> was 36.36%, an increase of only 1.3%. Although this is a small increase overall, CAT 1 open finding vulnerabilities were reduced by 70% as is seen by this <a href="">before</a> and <a href="">after</a>. This lab provided hands-on experience with the end-to-end process of hardening RHEL9 according to DISA STIG requirements and mapping findings to NIST SP 800-53 controls. I learned the value of structured remediation—prioritizing CAT I findings, then iteratively scanning and fixing vulnerabilities. One of the main challenges was the manual nature of compliance validation and remediation, which required careful cross-referencing between scan results, STIG IDs, and associated controls. The tools (SCAP, SCC, Nessus, STIG Viewer) were invaluable, but integrating their outputs and maintaining documentation consistency demanded diligence. Despite these challenges, the remediation efforts resulted in a measurable improvement in compliance scores, demonstrating the effectiveness of systematic security hardening.
+
+
 
 ---
 
 ## Going Forward
 
-This lab exercise demonstrated the end-to-end process of applying the STIG/RMF, mapping vulnerabilities to NIST controls, leveraging industry-standard tools, and documenting compliance activities. This approach ensures systems are hardened against threats and meet federal compliance standards.
+To build on this work I plan to update this repo with documentaion of automating more of the workflow by leveraging Ansible playbooks for configuration changes and validations. In the futute I plan to integrate continuous monitoring tools which would help maintain compliance over time and ties in with the final step of RMF process.
 
 <a href=""></a>
