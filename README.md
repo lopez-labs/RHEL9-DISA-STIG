@@ -16,7 +16,7 @@ Harden a RHEL9 virtual machine according to DISA STIG requirements, leveraging R
 
 ## RMF Process Alignment
 
-- **Categorize:** System categorized as Moderate Impact per FIPS 199.
+- **Categorize:** System categorized as Low Impact per FIPS 199.
 - **Select:** Applicable security controls selected from NIST SP 800-53.
 - **Implement:** Security configurations implemented per STIG guidance.
 - **Assess:** Vulnerability and compliance scans performed; results mapped to NIST controls.
