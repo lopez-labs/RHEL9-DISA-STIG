@@ -20,7 +20,7 @@ Harden a RHEL9 virtual machine according to DISA STIG requirements, leveraging R
 - **Select:** Applicable security controls selected from NIST SP 800-53.
 - **Implement:** Security configurations implemented per STIG guidance.
 - **Assess:** Vulnerability and compliance scans performed; results mapped to NIST controls.
-- **Authorize:** [Lab context: Not applicable—would be submitted for AO review in production.]
+- **Authorize:** N/A
 - **Monitor:** Continuous monitoring simulated through iterative scan/remediation cycles.
 
 ---
@@ -88,7 +88,7 @@ Harden a RHEL9 virtual machine according to DISA STIG requirements, leveraging R
 
 | Vuln ID | Rule ID | STIG ID | Severity | SP 800-53 Control | Description | Remediation Steps | Commands/Edits Used | Status |
 |---------|---------|---------|----------|-------------------|-------------|-------------------|---------------------|--------|
-| V-257879 | SV-257879r1045454_rule | RHEL-09-231190 | CAT I | SC-28 | RHEL 9 local disk partitions must implement cryptographic mechanisms to prevent unauthorized disclosure or modification of all information that requires at rest protection |                   |                     | Fixed |  
+| V-257879 | SV-257879r1045454_rule | RHEL-09-231190 | CAT I | SC-28 | RHEL 9 local disk partitions must implement cryptographic mechanisms to prevent unauthorized disclosure or modification of all information that requires at rest protection | Provisioned a second drive, Backed up the data to the second drive, Booted the first drive from iso file, Enabled disk encryption during set up, Restored data from backup                  |                     | Fixed |  
 
 | Vuln ID | Rule ID | STIG ID | Severity | SP 800-53 Control | Description | Remediation Steps | Commands/Edits Used | Status |
 |---------|---------|---------|----------|-------------------|-------------|-------------------|---------------------|--------|
